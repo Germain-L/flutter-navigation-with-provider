@@ -11,3 +11,7 @@ Probably but i didn't bother to check
 
 ## How do i test it ?
  - clone repo and run `flutter create .` to add android, ios and web directories
+
+
+ ## demo:
+ ![](assets/demo.gif)
