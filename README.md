@@ -15,4 +15,4 @@ Probably but i didn't bother to check
 
  ## demo:
  ![](assets/demo.gif)
- <div style="text-align:center"><img src="assets/demo.gif" height="790"></div>
+ <div style="align:center"><img src="assets/demo.gif" height="790"></div>
