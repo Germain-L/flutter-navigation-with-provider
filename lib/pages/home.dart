@@ -7,23 +7,25 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final navigationProvider = Provider.of<Navigation>(context);
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text("This is the home page"),
-        FlatButton(
-          child: Text("Flush pages"),
-          onPressed: () => navigationProvider.flush(),
-        ),
-        FlatButton(
-          child: Text("Account"),
-          onPressed: () => navigationProvider.newPage("Account"),
-        ),
-        FlatButton(
-          child: Text("Sign in"),
-          onPressed: () => navigationProvider.newPage("Sign in"),
-        ),
-      ],
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text("This is the home page"),
+          FlatButton(
+            child: Text("Flush pages"),
+            onPressed: () => navigationProvider.flush(),
+          ),
+          FlatButton(
+            child: Text("Account"),
+            onPressed: () => navigationProvider.newPage("Account"),
+          ),
+          FlatButton(
+            child: Text("Sign in"),
+            onPressed: () => navigationProvider.newPage("Sign in"),
+          ),
+        ],
+      ),
     );
   }
 }

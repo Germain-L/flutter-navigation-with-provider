@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class Navigation with ChangeNotifier {
   String currentPageTitle = "Sign in";
-
 
   List<String> pageHistory = [];
 
@@ -17,8 +17,14 @@ class Navigation with ChangeNotifier {
   }
 
   void pop() {
-    currentPageTitle = pageHistory.last;
-    pageHistory.removeLast();
-    notifyListeners();
+    switch (pageHistory.isEmpty) {
+      case true:
+        Fluttertoast.showToast(msg: "No more pages in history");
+        break;
+      case false:
+        currentPageTitle = pageHistory.last;
+        pageHistory.removeLast();
+        notifyListeners();
+    }
   }
 }
