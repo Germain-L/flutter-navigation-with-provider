@@ -15,3 +15,4 @@ Probably but i didn't bother to check
 
  ## demo:
  ![](assets/demo.gif)
+ <img src="assets/demo.gif" width="400" height="790">
