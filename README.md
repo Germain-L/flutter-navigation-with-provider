@@ -9,6 +9,9 @@ I was messing around learning how to use provider when i got the idea to do simp
 
 Probably but i didn't bother to check
 
+### Should this be used ?
+No.
+
 ## How do i test it ?
  - clone repo and run `flutter create .` to add android, ios and web directories
 
